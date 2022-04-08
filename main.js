@@ -56,9 +56,9 @@ function main() {
 function getFileName(download, fileTime) {
     var filename = fileTime.format("YYYY-MM-DD_HH-mm-ss")
 
-    if (download["Media Type"] == "PHOTO")
+    if (download["Media Type"] == "Image")
         filename += ".jpg";
-    else if (download["Media Type"] == "VIDEO")
+    else if (download["Media Type"] == "Video")
         filename += ".mp4";
 
     return filename
